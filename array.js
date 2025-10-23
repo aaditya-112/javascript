@@ -81,9 +81,9 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
                 // console.log(arr)
 
         // map method
-                // let arr2 = arr.map((item)=>{
-                //         let value = item*2;
-                //         return value;
-                // })
-                // console.log(arr2);
-                // console.log(arr);
+                let arr2 = arr.map((item)=>{
+                        let value = item*2;
+                        return value;
+                })
+                console.log(arr2);
+                console.log(arr);
