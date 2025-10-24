@@ -20,7 +20,7 @@
 
 // Array Traversal / Itrating Over Arrays
 
-let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 // 1: for loop
 
@@ -81,9 +81,51 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
                 // console.log(arr)
 
         // map method
-                let arr2 = arr.map((item)=>{
-                        let value = item*2;
-                        return value;
-                })
-                console.log(arr2);
-                console.log(arr);
+                // let arr2 = arr.map((item)=>{
+                //         let value = item*2;
+                //         return value;
+                // })
+                // console.log(arr2);
+                // console.log(arr);
+
+// how to insert , add , replace and delete element in array .
+
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+
+// 1: push():method that add one or more element to the end of an array.
+
+        // fruits.push("guava");
+        // console.log(fruits);
+        // push return the length of the array.
+        // console.log(fruits.push("guava"));
+// 2: pop():Method that remove the last element from an array.
+
+        // fruits.pop();
+        // console.log(fruits);
+
+        // pop() return the element which is removed from array.
+        // console.log(fruits.pop());
+
+// 3: unshift():Method that addds one or more element to the beginnning of an array.
+
+        // fruits.unshift("guava");
+        // console.log(fruits);
+
+        // unshift return the new length of an array.
+        // console.log(fruits.unshift("guava"));
+
+// 4: shift():Method that remove the first element from an array.
+
+        // fruits.shift();
+        // console.log(fruits);
+
+        // shift return the removed element from array.
+        // console.log(fruits.shift());
+
+// 5: splice():that splice() method of array instance changes the contents of an array by removing or replacing existing element and /or adding new elements in place.
+
+        // console.log(fruits);
+        // fruits.splice(0,1);
+        // fruits.splice(1,3);
+        // fruits.splice(0,0,"aditya", "koundal");
+        // console.log(fruits);
