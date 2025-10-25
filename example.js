@@ -57,3 +57,14 @@
     // console.log(bonusMarks);
 
 
+// Q: add dec at the end of an array?
+
+    // let arr=["jan","march","april","june","july"];
+    // console.log(arr);
+    // arr.push("dec");
+    // console.log(arr);
+
+// Q: update march to March 
+
+    // console.log(arr.splice(1,1,"March"));
+    // console.log(arr);

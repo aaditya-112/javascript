@@ -69,7 +69,7 @@
 
 // example 2: to understand difference b/w for each and map method.
         
-        let arr =[ 1,2,3,4,5,6];        
+        // let arr =[ 1,2,3,4,5,6];        
         // forEach method 
         
                 // let arr2= arr.forEach((items)=>{
@@ -90,7 +90,7 @@
 
 // how to insert , add , replace and delete element in array .
 
-let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 // 1: push():method that add one or more element to the end of an array.
 
@@ -126,6 +126,54 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
         // console.log(fruits);
         // fruits.splice(0,1);
-        // fruits.splice(1,3);
+        // console.log(fruits.splice(1,3));
         // fruits.splice(0,0,"aditya", "koundal");
         // console.log(fruits);
+
+// searching in an array
+// for search we have - indxOf , lastIndexOf, and Includes
+
+// let arr=[1,2,3,6,4,5,6,7,8,9];
+
+// indexOf method: the indexOf method return the first index at which a given element can be found in array , or "-1" if it is not present .
+
+        // console.log(arr.indexOf(6));
+        // it can take 2nd argument i.e. the staring index from where the searching should start.
+        // console.log(arr.indexOf(6,4));
+
+// lastIndexOf method: the lastIndexOf() method of array instances returns the last index at found in the array , or "-1" if it is not presentt . the array is searched backword.
+
+        // console.log(arr.lastIndexOf(6));
+        // it can take 2nd argument i.e. the staring index from where the searching should start.
+        // console.log(arr.lastIndexOf(6,5));
+
+
+// includes method: the include method check whether an array include a certain element, returning true or false.
+
+        // console.log(arr.includes(5));
+        // console.log(arr.includes(16));
+
+
+// filter method: the filter method creates a new array with all element that pass the text implemented by the provided function.
+
+        //let arr =[1,2,3,4,5,6,7,9,3,4,5,3,4,5,6,2,3,8];
+        
+        //console.log(arr.filter((items)=>{
+        //return items >4;
+        //}));
+
+// reduce method : the reduce method executes a reducer function for array element. the reduce method return a single value i.e. the function's accumulated result.
+
+        // let arr=[1,3,4,5,6,4,9,5,6,3,,99];
+
+        // let result = arr.reduce((accumulate, item , index, arr)=>{
+        //         return accumulate = accumulate+ item;
+        // },0)
+
+        // let result = arr.reduce((accumulate, item)=>{
+        //         if(accumulate<item){
+        //                accumulate=item 
+        //         }
+        //         return accumulate;
+        // },0 )
+        // console.log(result);
