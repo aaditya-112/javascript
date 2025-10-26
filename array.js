@@ -177,3 +177,4 @@
         //         return accumulate;
         // },0 )
         // console.log(result);
+        
