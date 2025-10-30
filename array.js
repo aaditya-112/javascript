@@ -178,3 +178,37 @@
         // },0 )
         // console.log(result);
         
+
+// for(let i = 0 ; i<4;i++){
+
+//         for(let j = 0; j<3;j++){
+//                 if(i==0 && j==0 || i==0 && j==2){
+//                         document.write("&nbsp ")
+//                 }
+//                 else if(i==3 && j==0 || i==3 && j==2){
+//                         document.write("&nbsp ")
+//                 }
+//                 else{
+//                 document.write("*")
+//                 }
+//         }
+
+//        document.write("<br>")
+        
+// }
+
+for(let i = 0 ; i<4;i++){
+
+        for(let j = 0; j<3;j++){
+                if(i==0 && (j==0||j==2) || i==3 &&(j==0||j==2)){
+                        document.write("&nbsp ");
+                }
+                else{
+                document.write("*")
+                }
+        }
+
+       document.write("<br>")
+        
+}
+
