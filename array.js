@@ -1,6 +1,6 @@
 // Creatind arrays:
 
-// Using Array constructo
+// Using Array constructor
 
         // let fruits = new Array("apple","orange","banana");
         // console.log(fruits);
@@ -197,18 +197,18 @@
         
 // }
 
-for(let i = 0 ; i<4;i++){
+// for(let i = 0 ; i<4;i++){
 
-        for(let j = 0; j<3;j++){
-                if(i==0 && (j==0||j==2) || i==3 &&(j==0||j==2)){
-                        document.write("&nbsp ");
-                }
-                else{
-                document.write("*")
-                }
-        }
+//         for(let j = 0; j<3;j++){
+//                 if(i==0 && (j==0||j==2) || i==3 &&(j==0||j==2)){
+//                         document.write("&nbsp ");
+//                 }
+//                 else{
+//                 document.write("*")
+//                 }
+//         }
 
-       document.write("<br>")
+//        document.write("<br>")
         
-}
+// }
 
