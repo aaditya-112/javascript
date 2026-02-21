@@ -75,6 +75,29 @@
 // console.log(arr.map((item, index)=> item > 3));
 // console.log(arr.filter((item, index)=> item > 3));
 
+// let str = "i am a boy";
 
+// let vowels = ["a","e","i","o","u"];
 
+// let countOfVowels = {
+//     a:0,
+//     e:0,
+//     i:0,
+//     o:0,
+//     u:0
+// }
 
+// let newStr= str.split('');
+
+// let newarr=newStr.map((item, index)=>{
+//     for(i=0;i<vowels.length;i++){
+//         if(item==vowels[i]){
+//             countOfVowels[vowels[i]]++;
+//         }
+//     }
+    
+
+// })
+
+// // console.log(newarr);
+// console.log(countOfVowels);
