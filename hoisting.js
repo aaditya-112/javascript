@@ -13,3 +13,6 @@
 
     // console.log(a); //referance error
     // const a=0;
+
+// let str = "hello"
+

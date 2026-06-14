@@ -58,8 +58,93 @@
     
 // // })
 
-let str = "hi my name is aditya";
-let aryStr= str.split('');
-let revStr = aryStr.reverse();
-let finalStr= revStr.join("");
-console.log(`reversed string is : ${finalStr}`);
+// let str = "hi my name is aditya";
+// let aryStr= str.split('');
+// let revStr = aryStr.reverse();
+// let finalStr= revStr.join("");
+// console.log(`reversed string is : ${finalStr}`);
+
+// function reverseString (str){
+//     let reversed = "";
+
+//     for(let i = str.length-1; i>=0 ; i--){
+//         reversed += str[i];
+//     }
+//     return(reversed);
+// }
+
+// console.log(reverseString("hello, my name is aaditya"));
+// output : aytidaa si eman ym ,olleh
+
+
+// using buit- in method 
+// function reverseString(str){
+//     return str.split(" ").reverse().join(" ");
+// }
+// console.log(reverseString("hi my name is aaditya"))
+
+// Q2. check palindrome
+
+// let str = "nit";
+// let leftPointer = 0;
+// let rightPointer = str.length-1
+
+// while(leftPointer<rightPointer){
+//     if(str[leftPointer]==str[rightPointer]){
+//         leftPointer =+ 1 ;
+//         rightPointer =-1;
+
+//     }
+//     else(console.log(`${str} is not a palindrome`))
+// }
+
+// let strArry= str.split('');
+// let lastindex = strArry.length-1;
+// let answer;
+// for(let i = 0 ; i<= 2; i++){
+//     if(strArry[i]==strArry[lastindex]){
+//         lastindex =- 1;
+//         answer = true;
+//     }
+//     else(answer = false);
+        
+// }
+// console.log(answer)
+
+// let aryStr = str.split('');
+// let reversedStr = aryStr.reverse();
+// // console.log(reversedStr)
+// let isPalindrome = true;
+// for(let i = 0; i<=str.length-1 ; i++){
+//     if(aryStr[i]!==reversedStr[i]){
+//         console.log("h");
+//         isPalindrome = false;
+//         break;
+//     }
+// }
+// console.log(isPalindrome); 
+
+// Palindrome using 2 pointer 
+
+// function isPalindrome(str){
+//     let left = 0 ;
+//     let right = str.length-1;
+
+//     while(left<right){
+//         if(str[left] !== str[right]){
+//             return false;
+//         }
+//         left ++;
+//         right --;
+
+//     }
+//     return true;
+// }
+// console.log(`nitn is palindrome ${isPalindrome("nit")}`)
+
+// using buit in functions 
+
+// function isPalindrome(str){
+//     return str === str.split('').reverse().join('');
+// }
+// console.log(isPalindrome("hello"))
