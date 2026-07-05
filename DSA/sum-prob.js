@@ -9,10 +9,20 @@
 // }
 // console.log(sum(-100, 200, 300, 654.26));
 
+// function sum (...args){
+//    let ans = args.reduce((acc, currItem)=>{
+//         return acc + currItem;
+//    },0)
+//    return ans;
+// }
+// console.log(sum());
+
 function sum (...args){
-   let ans = args.reduce((acc, currItem)=>{
-        return acc + currItem;
-   },0)
-   return ans;
+    let sum = 0;
+    let ans = args.map((currItem)=>{
+        sum = sum + currItem;
+        return sum;
+    })
+    return ans;
 }
-console.log(sum());
+console.log(sum(100,200));
