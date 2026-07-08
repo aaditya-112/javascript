@@ -3,7 +3,7 @@
 // You must write an algorithm with O(log n) runtime complexity.
 
 let nums = [-1,0,3,5,9,12]
-let target = 9
+let target = 12
 
 
 function binarySearch(arr,num){
@@ -19,8 +19,9 @@ function binarySearch(arr,num){
         else if(arr[mid]>num){
             end= mid-1
         }
-        else  return mid;
-        
+        else if (arr[mid]===num){
+            return mid;
+        }   
     }
     return -1;
 }

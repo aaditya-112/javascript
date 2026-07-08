@@ -101,3 +101,32 @@
 
 // // console.log(newarr);
 // console.log(countOfVowels);
+
+function reverseInteger(num)
+{
+    // let rev;
+    // if(num<0){
+    //     num = Math.abs(num);
+    //     rev = num.toString().split('').reverse().join('');
+    //     return Number(-rev);
+    // }
+    // else{
+    // rev = num.toString().split('').reverse().join('');
+    
+    // return Number(rev);
+    // }
+    let rev ;
+    let n = Math.abs(num);
+
+    rev = n.toString().split('').reverse().join('');
+    if(num<0){
+        if(-rev<Math.pow(-2,31))return 0;
+        return Number(-rev);
+    }
+    else{
+        if(rev>Math.pow(2,31)-1) return 0;
+        return Number(rev);
+    }
+}
+console.log(reverseInteger(2147483647))
+// console.log(Math.pow(2,31)-1);
