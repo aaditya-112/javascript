@@ -16,3 +16,9 @@ function powerOfTwo(num){
 }
 
 console.log(powerOfTwo(16));
+// bit manipulation
+
+function powerOfTwoBit(n){
+    return n>0 && (n & (n-1))===0;
+}
+console.log(powerOfTwoBit(16))
