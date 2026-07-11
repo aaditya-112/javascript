@@ -3,17 +3,19 @@
 // [0,1,2,2,3,0,4,2], 2
 function removeElements (nums, val){
     let left = 0 ;
-    let right = nums.length;
-    while(left!==right){
-        if(nums[left]==val){
-            if(nums[right]!=val){
-                nums[left]=nums[right];
-                left ++;
-                right++;
-            }
-            else right++;
+    let rigth = 0;
+    // for(let i = 0 ; i <nums.length;i++){
+    //     if(nums[i]!==val){
+    //         nums[left]= nums[i];
+    //         left++;
+    //     }
+    // }
+    while(rigth<nums.length){
+        if(nums[rigth]!==val){
+            nums[left]=nums[rigth]
+            left++;
         }
-        else left++;
+        rigth++
     }
     console.log(nums)
     return left;
