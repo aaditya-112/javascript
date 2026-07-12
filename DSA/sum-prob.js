@@ -25,4 +25,5 @@ function sum (...args){
     })
     return ans;
 }
-console.log(sum(100,200));
+// console.log(sum(100,200));
+
