@@ -61,4 +61,25 @@ function isPalindromeInt(num){
  function isPalindromeIntByString(num){
    return num.toString().split('').reverse().join('') === num.toString()
  }
- console.log(isPalindromeIntByString(10))
+//  console.log(isPalindromeIntByString(10))
+
+//  ------------------------
+// date - 14-07-2026
+// Q.4 : 7-Reverse Integer
+// -------------------------
+
+function reverseInteger (num){
+    let absNumber = Math.abs(num);
+    let rev = 0;
+    while(absNumber>0){
+        let lastDigit = absNumber%10;
+        rev = rev*10+lastDigit;
+        if(rev>(Math.pow(2,31)-1)) return 0;
+        absNumber = Math.floor(absNumber/10)
+    }
+    if(num<0){
+        return -rev;
+    }
+    else return rev;
+}
+console.log(reverseInteger(120))
