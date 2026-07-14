@@ -85,15 +85,27 @@ function reverseInteger (num){
 // console.log(reverseInteger(120))
 
 // --------------------------------------------------
-// count negatives question from(namaste dev)
+// count negatives -question from(namaste dev)
 // --------------------------------------------------
 
 function countNegatives(nums){
     if(!Array.isArray(nums)) return false;
-    let negativeNums = nums.filter((item,index)=>{
+    let negativeNums = nums.filter((item)=>{
         return item<0;
     })
     return negativeNums.length;
 }
 
 // console.log(countNegatives("5"))
+
+// --------------------------------------------------
+// Find Smallest number -question from(namaste dev)
+// --------------------------------------------------
+function findSmallestNumber (nums){
+    if(!Array.isArray(nums)) return false;
+    if(nums.length===0)return null;
+    let minElement = Math.min(...nums);
+    if(isNaN(minElement)||minElement==Infinity)return false;
+    return minElement;
+}
+console.log(findSmallestNumber([1,"a"]))
