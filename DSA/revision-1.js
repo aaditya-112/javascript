@@ -82,4 +82,18 @@ function reverseInteger (num){
     }
     else return rev;
 }
-console.log(reverseInteger(120))
+// console.log(reverseInteger(120))
+
+// --------------------------------------------------
+// count negatives question from(namaste dev)
+// --------------------------------------------------
+
+function countNegatives(nums){
+    if(!Array.isArray(nums)) return false;
+    let negativeNums = nums.filter((item,index)=>{
+        return item<0;
+    })
+    return negativeNums.length;
+}
+
+// console.log(countNegatives("5"))
