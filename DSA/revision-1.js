@@ -108,4 +108,4 @@ function findSmallestNumber (nums){
     if(isNaN(minElement)||minElement==Infinity)return false;
     return minElement;
 }
-console.log(findSmallestNumber([1,"a"]))
+// console.log(findSmallestNumber([1,"a"]))
