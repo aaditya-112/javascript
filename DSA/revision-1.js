@@ -109,3 +109,49 @@ function findSmallestNumber (nums){
     return minElement;
 }
 // console.log(findSmallestNumber([1,"a"]))
+
+// --------------------------------------------------
+// Find largest number -question from(namaste dev)
+// --------------------------------------------------
+
+function largestNumber(nums){
+    if(!Array.isArray(nums)|| nums.length<1) return null;
+
+    let largest = Math.max(...nums);
+    if(isNaN(largest) || largest == Infinity){ return false};
+
+    return largest;
+}
+// console.log(largestNumber(null),"null")
+// console.log(largestNumber(undefined),"undefined")
+// console.log(largestNumber(45),"number")
+// console.log(largestNumber("34"),"string")
+// console.log(largestNumber([Infinity]),"infinity")
+// console.log(largestNumber([NaN]),"NaN")
+// console.log(largestNumber([1,"a"]),"mixed array [1,'a']")
+
+// --------------------------------------------------
+// 704. Binary Search - LeetCode
+// --------------------------------------------------
+
+function binarySearch (nums, target){
+    let start = 0;
+    let end = nums.length-1;
+
+    while(start<=end){
+        let mid = Math.floor((start+end)/2)
+
+        if(nums[mid]<target){ 
+            start = mid+1;
+        }
+        else if(nums[mid]>target){
+            end = mid-1;
+        }
+        else if(nums[mid] === target){
+            return mid;
+        }
+    }
+    return -1;
+
+}
+console.log(binarySearch([-1,0,3,5,9,12],9))

@@ -29,7 +29,7 @@
              
 // maxConsecutiveOnces([[1,1,0,1,1,1]])
 
-function maxConsecutiveOnces(nums){
+function maxConsecutiveOnes(nums){
     let max = 0;
     let count = 0;
     for(let i=0 ;i<nums.length;i++ ){
@@ -47,4 +47,4 @@ function maxConsecutiveOnces(nums){
     }
     return max;
 }
-console.log(maxConsecutiveOnces([1,0,1,1,0,1]))
+console.log(maxConsecutiveOnes([1,0,1,1,0,1]))

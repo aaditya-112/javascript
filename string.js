@@ -148,3 +148,23 @@
 //     return str === str.split('').reverse().join('');
 // }
 // console.log(isPalindrome("hello"))
+
+function palinderome (str){
+    return str.toString().split('').reverse().join('') === str.toString();
+}
+// console.log(palinderome(121))
+
+function numberPalindrom(num){
+    let copyNum = num
+    let rev = 0;
+    while(num>0){
+        let lastDigit = num%10;
+        rev = rev*10+lastDigit;
+        num= Math.floor(num/10);
+    }
+    if(rev===copyNum) return true
+    else return false
+
+}
+console.log(numberPalindrom(121121545484 ))
+                               
