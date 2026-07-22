@@ -166,5 +166,10 @@ function numberPalindrom(num){
     else return false
 
 }
-console.log(numberPalindrom(121121545484 ))
+// console.log(numberPalindrom(121121545484 ))
+
+function reverseOfString(str){
+    return str.split(" ").reverse().join(" ");
+}
+// console.log(reverseOfString("hello world, i am aaditya"))
                                
