@@ -198,5 +198,13 @@
 // }
 // console.log(vowelsCount("hello"))
 
-let srt = "hello";
-console.log(srt.length);
+// let srt = "hello";
+// console.log(srt.length);
+
+const obj = {
+    name :"Aadity"
+}
+const obj1 = obj;
+obj1.name = "ram";
+console.log(obj);
+console.log(obj1);

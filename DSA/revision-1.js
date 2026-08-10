@@ -134,24 +134,58 @@ function largestNumber(nums){
 // 704. Binary Search - LeetCode
 // --------------------------------------------------
 
-function binarySearch (nums, target){
-    let start = 0;
-    let end = nums.length-1;
+// function binarySearch (nums, target){
+//     let start = 0;
+//     let end = nums.length-1;
 
-    while(start<=end){
-        let mid = Math.floor((start+end)/2)
+//     while(start<=end){
+//         let mid = Math.floor((start+end)/2)
 
-        if(nums[mid]<target){ 
-            start = mid+1;
-        }
-        else if(nums[mid]>target){
-            end = mid-1;
-        }
-        else if(nums[mid] === target){
-            return mid;
-        }
-    }
-    return -1;
+//         if(nums[mid]<target){ 
+//             start = mid+1;
+//         }
+//         else if(nums[mid]>target){
+//             end = mid-1;
+//         }
+//         else if(nums[mid] === target){
+//             return mid;
+//         }
+//     }
+//     return -1;
 
+// }
+// console.log(binarySearch([-1,0,3,5,9,12],9))
+
+// --------------------------------------------------
+// 1. Sum (foundation)
+// --------------------------------------------------
+
+function sum (...args){
+    let sum = 0;
+    // simple for loop
+        // for(let i = 0 ; i<args.length;i++){
+        //     sum = args[i]+sum;
+        // }
+    // for in loop
+        // for(let i in args){
+        //     sum = sum + args[i];
+        // }
+    // for of loop
+        // for(let i of args){
+        //     sum = sum + i
+        // }
+
+    // for each 
+        // args.forEach((item)=>{
+        //     sum = sum + item
+        // })
+    
+    // reducer method
+        sum = args.reduce((acu,item)=>{
+            // console.log(acu);
+            // console.log(item);
+            return acu+item
+        },0)
+    return sum;
 }
-console.log(binarySearch([-1,0,3,5,9,12],9))
+console.log(sum(1,2,3,4))
