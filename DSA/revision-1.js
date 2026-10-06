@@ -160,8 +160,8 @@ function largestNumber(nums){
 // 1. Sum (foundation)
 // --------------------------------------------------
 
-function sum (...args){
-    let sum = 0;
+// function sum (...args){
+//     let sum = 0;
     // simple for loop
         // for(let i = 0 ; i<args.length;i++){
         //     sum = args[i]+sum;
@@ -181,11 +181,36 @@ function sum (...args){
         // })
     
     // reducer method
-        sum = args.reduce((acu,item)=>{
-            // console.log(acu);
-            // console.log(item);
-            return acu+item
-        },0)
-    return sum;
+        // sum = args.reduce((acu,item)=>{
+        //     // console.log(acu);
+        //     // console.log(item);
+        //     return acu+item
+        // },0)
+//         sum = args.reduce((accu,item)=>accu+item,0)
+//     return sum;
+// }
+// console.log(sum(1,2,3,4))
+
+// ----------------------------------------
+// Q2 : second largest digit in a string
+// -----------------------------------------
+// Input: s = "dfa12321afd"
+// Output: 2
+function secondLargestDigit (str){
+    let arrOfNums =[];
+    for (let i of str){
+        if(!isNaN(i)){
+            if(!arrOfNums.includes(i)){
+                arrOfNums.push(i)
+            }
+        }
+    }
+    if(arrOfNums.length<=1){
+        return -1
+    }else{
+        arrOfNums.sort((a,b)=> b-a);
+        return Number(arrOfNums[1]);
+
+    }
 }
-console.log(sum(1,2,3,4))
+console.log(secondLargestDigit("abc1111"))
